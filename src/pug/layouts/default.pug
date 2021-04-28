@@ -1,0 +1,19 @@
+block variables
+  - var title = "Default Page"
+
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title= title
+    link(rel="stylesheet", href="css/style.css")
+
+  body
+    include ../blocks/nav
+    block header
+    block content
+    block footer
+      include ../blocks/footer
+    block scripts
+      script(src='./js/main.js')

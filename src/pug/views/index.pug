@@ -1,0 +1,109 @@
+extends ../layouts/default.pug
+
+block variables
+    - var title = "Pakko"
+
+block header
+  section.wrapper.banner
+    .container
+      .banner__content
+        h2.banner__content-title.wow.fadeIn(data-wow-delay=".5s") Devis, factures, suivi, plafonds, cotisations
+        p.banner__content-description Pakko accompagne les micro-entrepreneurs et leur fait gagner du temps !
+        .banner__content-buttons
+          a.button.button--purple(href="#") Créer mon compte
+          a.button.button--transparent(href="#") Voir la vidéo
+      .banner__screenshot
+        img.banner__screenshot-image.wow.fadeIn(src="images/banner.png" alt="Pakko" data-wow-delay=".7s")
+
+block content
+  section.wrapper.pricing
+    .container
+      h4.pricing__heading.wow.fadeIn Des tarifs qui s'adaptent à votre activité !
+      .pricing__table
+        .plan.plan--white.wow.fadeInDown(data-wow-delay=".5s" data-wow-offset="30")
+          .plan__header
+            .plan__name
+              span
+                img.plan__logo-image(src="images/white-logo.svg")
+              h4 Gratuit
+            .plan__price 0€<span>/mois</span>
+          .plan__footer
+            ul.plan__featers-list
+              li.plan__features-item Gratuit
+              li.plan__features-item Jusqu'à 4 clients
+              li.plan__features-item Chiffre d'affaires jusqu'à 5 000€
+        .plan.plan--green.wow.fadeInDown(data-wow-delay=".7s" data-wow-offset="30")
+          .plan__header
+            .plan__name
+              span
+                img.plan__logo-image(src="images/white-logo.svg")
+              h4 Basique
+            .plan__price 5€<span>/mois</span>
+          .plan__footer
+            ul.plan__featers-list
+              li.plan__features-item 30 jours d'essai gratuits
+              li.plan__features-item Clients illimités
+              li.plan__features-item Chiffre d'affaires jusqu'à 30 000€
+        .plan.plan--yellow.wow.fadeInDown(data-wow-delay=".9s" data-wow-offset="30")
+          .plan__header
+            .plan__name
+              span
+                img.plan__logo-image(src="images/white-logo.svg")
+              h4 Pro
+            .plan__price 12€<span>/mois</span>
+          .plan__footer
+            ul.plan__featers-list
+              li.plan__features-item 30 jours d'essai gratuits
+              li.plan__features-item Clients illimités
+              li.plan__features-item Chiffre d'affaires illimité
+  section.wrapper.reviews
+    .container
+      .reviews__column
+        h4.reviews__header Ils en parlent mieux que nous
+        .review.review--purple.review--twitter.wow.fadeInLeft(data-wow-delay=".4s" data-wow-offset="30")
+          .review__author
+            .review__author-avatar
+              img.review__author-foto(src="images/avatar-1.jpg")
+            .review__author-info
+              span.review__author-name Antony Legrand
+              span.review__author-nickname @Wisibility
+          p.review__body Merci pour toutes vos réponses concernant un bon service de facturation / suivi de CA pour les Free… Je crois qu'avec @Pakko_app j'ai trouvé ce que je cherche. Simple et efficace.
+          a.review__link(href="#") Voir le post
+        .review.review--green.review--comment.review--noavatar.wow.fadeInLeft(data-wow-delay=".4s" data-wow-offset="30")
+          .review__author
+            .review__author-avatar
+              img.review__author-foto(src="images/user-icon.svg")
+            .review__author-info
+              span.review__author-name Retour utilisateur
+              span.review__author-nickname Formulaire de feedback
+          p.review__body Un onboarding clair et vraiment bien pensé. +10 pour les liens vers le site de l’URSSAF lors de l’inscription.
+      .reviews__column
+        .review.review--red.review--comment.review--noavatar.wow.fadeInRight(data-wow-delay=".4s" data-wow-offset="30")
+          .review__author
+            .review__author-avatar
+              img.review__author-foto(src="images/user-icon.svg")
+            .review__author-info
+              span.review__author-name Retour utilisateur
+              span.review__author-nickname Formulaire de feedback
+          p.review__body C’est exactement ce que je cherchais.
+        .review.review--blue.review--twitter.wow.fadeInRight(data-wow-delay=".4s" data-wow-offset="30")
+          .review__author
+            .review__author-avatar
+              img.review__author-foto(src="images/avatar-2.jpg")
+            .review__author-info
+              span.review__author-name Matthieu Teyssandier
+              span.review__author-nickname @m_teyssandier
+          p.review__body @Pakko_app Best service de CA !
+          a.review__link(href="#") Voir le post
+        .review.review--yellow.review--comment.review--noavatar.wow.fadeInRight(data-wow-delay=".4s" data-wow-offset="30")
+          .review__author
+            .review__author-avatar
+              img.review__author-foto(src="images/user-icon.svg")
+            .review__author-info
+              span.review__author-name Retour utilisateur
+              span.review__author-nickname Formulaire de feedback
+          p.review__body Le service a l’air super ça faisait longtemps que je cherchais un dashboard aussi clean que le votre ! Ça donne envie de l'utiliser !
+
+
+
+

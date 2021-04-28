@@ -1,0 +1,30 @@
+-
+    var menuItems = [
+            {title: 'Tarifs', link: '/#tariffs', active: true},
+            {title: 'App iOS', link: '/#app'},
+            {title: 'Me connecter', link: '/#contacts'}
+        ];
+
+section.wrapper.navigation
+  .container
+    .navigation__logo
+      a.navigaion__logo-link(href="#")
+        img.navigation__logo-image(src="images/logo.svg")
+    nav.navigation__menu
+      ul.navigation__menu-list
+        each val in menuItems
+          li(class=val.active ? "navigation__menu-item active" : "navigation__menu-item")
+            a.navigation__menu-link(href=val.link title=val.title)= val.title
+      a.button.button--purple.navigation__subscribe-button(href="#") S'inscrire
+    .mobile
+      .burger
+      nav.mobile-nav
+        ul.mobile-nav__menu-list
+          each val in menuItems
+            li(class=val.active ? "mobile-nav__menu-item active" : "mobile-nav__menu-item")
+              a.mobile-nav__menu-link(href=val.link title=val.title)= val.title
+        a.button.button--purple.navigation__subscribe-button(href="#") S'inscrire
+
+
+
+

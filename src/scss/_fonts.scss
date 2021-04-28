@@ -1,0 +1,4 @@
+@import 'mixins';
+
+@include font-face(Inter, '../fonts/Inter-Regular', 400, normal, ttf);
+@include font-face(Inter, '../fonts/Inter-Bold', 700, normal, ttf);
