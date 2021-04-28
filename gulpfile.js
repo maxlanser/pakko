@@ -139,7 +139,7 @@ function imagesDev(){
 function imagesBuild(){
 	return src(paths.srcDir + '/images/**/*.*')
 		.pipe(image({
-				svgo: true
+				svgo: false
 			}))
 		.pipe(dest(paths.buildDir + '/images'));
 }
