@@ -13,4 +13,4 @@ And you can view build run
 ```sh
 gulp serveBuild
 ```
-Live site demo visit [DEMO](http://link.com)
+Live site demo visit [DEMO](https://maxlanser.gitlab.io/pakko/)
